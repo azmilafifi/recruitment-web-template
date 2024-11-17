@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Introduction
+- Recruitment website homepage template
+
+## Technologies Used
+- NextJs
+- Bootstrap 5.3
+- Scss
+
 ## Getting Started
 
 First, run the development server:
