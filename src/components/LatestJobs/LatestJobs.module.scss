@@ -1,0 +1,40 @@
+.main_container {
+  background-color: #D7E7FB;
+  padding: 80px 20px; 
+  color: #0C1E45;
+
+  @media (min-width:1400px) {
+    padding: 80px 120px;
+  }
+
+  h2 {
+    color: #0E2152;
+    font-size: 3.5rem; 
+    font-weight: 700;
+  }
+}
+
+.carousel_container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.arrow_icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  :hover{
+    opacity: 0.6;
+  }
+}
+
+
+

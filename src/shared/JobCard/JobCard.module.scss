@@ -1,0 +1,46 @@
+.job_card {
+  border-radius: 1.875rem; 
+  height: 27.5625rem; 
+  width: 23.3125rem;
+  padding: 2rem;
+
+  
+  @media (min-width: 1200px) {
+    padding: 40px
+  }
+
+  @media (max-width: 768px) {
+    width: 18rem; 
+    height: 22rem; 
+  }
+
+  @media (max-width: 480px) {
+    width: 16rem; 
+    height: 22rem; 
+  }
+
+
+  .title {
+    font-weight: 700;
+    font-size: 1.875rem;
+  }
+
+  .button {
+    border-radius: 30px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+    color: var(--color-blue);
+    padding: 15px 30px;
+  }
+}
+
+.badge {
+  background-color: #FFFFFF;
+  color: var(--color-blue);
+  font-size: 0.875rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+

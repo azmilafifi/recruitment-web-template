@@ -1,0 +1,177 @@
+.search_container {
+  height: auto; 
+  background-color: var(--color-blue); 
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  padding: 20px 20px;
+
+  @media (min-width:1400px) {
+    padding: 80px 120px;
+  }
+
+  @media (max-width:480px) {
+    justify-content: center;
+  }
+}
+
+.circle1,
+.circle2 {
+  width: 18.125rem; 
+  height: 18.125rem; 
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle1 {
+  background-color: var(--color-peach); 
+  top: -9.0625rem; 
+  left: -9.0625rem; 
+}
+
+.circle2 {
+  background-color: var(--color-yellow); 
+  bottom: -8.125rem; 
+  right: -2.125rem; 
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 3.9rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.searchForm {
+  display: flex;
+  width: 90%;
+
+}
+
+.input {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #AAAAAA;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.searchButton {
+  background-color: #fcdf69;
+  border-radius: 0 30px 30px 0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 80%;
+  height: auto;
+  background-size: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 20px 24px rgba(0, 0, 0, 0.2); 
+  }
+}
+
+@media (max-width: 480px) {
+  .circle1,
+  .circle2 {
+    width: 10rem; 
+    height: 10rem;
+  }
+
+  .circle1 {
+    top: -5rem; 
+    left: -5rem;
+  }
+
+  .circle2 {
+    bottom: -2rem;
+    right: -1rem;
+  }
+}
+
+@media (max-width: 823px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchForm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input {
+    border-radius: 30px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .searchButton {
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .imageWrapper {
+    order: -1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .col-md-6 {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .searchForm {
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;   
+  }
+
+  .input {
+    padding: 0.5rem 1rem; 
+  }
+
+  .searchButton {
+    padding: 0.5rem 1rem; 
+  }
+}
