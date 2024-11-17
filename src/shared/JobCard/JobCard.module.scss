@@ -1,24 +1,22 @@
 .job_card {
-  border-radius: 1.875rem; 
-  height: 27.5625rem; 
+  border-radius: 1.875rem;
+  height: 27.5625rem;
   width: 23.3125rem;
   padding: 2rem;
 
-  
   @media (min-width: 1200px) {
-    padding: 40px
+    padding: 40px;
   }
 
   @media (max-width: 768px) {
-    width: 18rem; 
-    height: 22rem; 
+    width: 18rem;
+    height: 22rem;
   }
 
   @media (max-width: 480px) {
-    width: 16rem; 
-    height: 22rem; 
+    width: 16rem;
+    height: 22rem;
   }
-
 
   .title {
     font-weight: 700;
@@ -36,11 +34,9 @@
 }
 
 .badge {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: var(--color-blue);
   font-size: 0.875rem;
   padding: 0.3rem;
   border-radius: 5px;
 }
-
-

@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from './Partnership.module.scss'
 import Image from 'next/image'
+import styles from './Partnership.module.scss'
 
 const Partnership = () => {
   return (

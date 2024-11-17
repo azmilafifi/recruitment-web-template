@@ -1,15 +1,14 @@
 .main_container {
-  background-color: #D7E7FB;
-  padding: 80px 20px; 
-  color: #0C1E45;
+  background-color: #d7e7fb;
+  padding: 80px 20px;
 
-  @media (min-width:1400px) {
+  @media (min-width: 1400px) {
     padding: 80px 120px;
   }
 
   h2 {
-    color: #0E2152;
-    font-size: 3.5rem; 
+    color: #0e2152;
+    font-size: 3.5rem;
     font-weight: 700;
   }
 }
@@ -19,7 +18,7 @@
   margin-bottom: 1rem;
   display: flex;
   overflow-y: hidden;
-  overflow-x: auto; 
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
@@ -27,14 +26,12 @@
 }
 
 .arrow_icon {
+  color: #0E2152;
   width: 40px;
   height: 40px;
   cursor: pointer;
 
-  :hover{
+  :hover {
     opacity: 0.6;
   }
 }
-
-
-

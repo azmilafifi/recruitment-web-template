@@ -1,5 +1,5 @@
-import styles from './Header.module.scss'
 import Button from '@/shared/Button/Button'
+import styles from './Header.module.scss'
 
 const Header = () => {
 
@@ -95,8 +95,8 @@ const Header = () => {
               </ul>
             </div>
             <div className="d-md-none d-sm-flex">
-              <Button className='me-3' label='Upload CV' backgroundColor='#FCDF69' color='black' />
-              <Button label='Contact us' backgroundColor='#F99D76' color='black' />
+              <Button className='me-3 shadow-slg' label='Upload CV' backgroundColor='#FCDF69' color='black' />
+              <Button className="shadow-lg" label='Contact us' backgroundColor='#F99D76' color='black' />
             </div>
           </div>
         </div>

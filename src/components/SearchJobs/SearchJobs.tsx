@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './SearchJobs.module.scss';
 import Image from 'next/image';
+import styles from './SearchJobs.module.scss';
 
 const SearchJobs = () => {
     return (
         <div className={styles.search_container}>
             <div className={styles.circle1}></div>
             <div className={styles.circle2}></div>
-            <div className={`${styles.contentWrapper} row col-12 align-items-center`}> 
-                <div className="col-md-6 text-white mb-5"> 
+            <div className={`${styles.contentWrapper} row col-12 align-items-center`}>
+                <div className="col-md-6 text-white mb-5">
                     <div className={styles.subtitle}>Software Recruitment Specialists</div>
                     <h1 className={styles.title}>Elevate your career</h1>
                     <div className={styles.searchForm}>

@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './JobCard.module.scss';
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPython } from "react-icons/fa";
 import { FaMoneyBill } from "react-icons/fa";
+import styles from './JobCard.module.scss';
 
 interface JobCardProps {
     jobtitle: string;
@@ -34,7 +34,7 @@ const JobCard: React.FC<JobCardProps> = ({
         >
             <div>
                 <span className={`${styles.badge}`}>
-                    <FaPython className="me-1" style={{ width: '18px', height: '18px' }}/>
+                    <FaPython className="me-1" style={{ width: '18px', height: '18px' }} />
                     {tech}
                 </span>
                 <h5 className={`card-title mt-3 ${styles.title}`}>{jobtitle}</h5>
@@ -43,13 +43,13 @@ const JobCard: React.FC<JobCardProps> = ({
                     {location}
                 </p>
                 <p className="card-text d-flex align-items-center">
-                    <FaMoneyBill style={{ width: '24px', height: '24px' }} className='me-2'/>
+                    <FaMoneyBill style={{ width: '24px', height: '24px' }} className='me-2' />
                     {salary}
                 </p>
                 <p className="card-text mt-4">{description}</p>
                 <button className={`btn btn-light mt-3 d-none d-md-flex ${styles.button}`}>View this job</button>
                 <p className={`card-text mt-3`}>
-                    <span className= "opacity-50">Posted on {datePosted}</span>
+                    <span className="opacity-50">Posted on {datePosted}</span>
                 </p>
             </div>
         </div>
