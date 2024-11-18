@@ -1,9 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-peach: #F99D76;
-  --color-yellow: #FCDF69;
-  --color-blue: #064EA4;
+  --color-peach: #f99d76;
+  --color-yellow: #fcdf69;
+  --color-blue: #064ea4;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,22 +38,29 @@ a {
   text-decoration: none;
 }
 
-
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
 
-.navbar {
+.nav-item .dropdown-menu {
   background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
 }
 
-.nav-item .dropdown-menu {
-  background-color: #f0f0f0;
-  max-height: 12.5rem;
-  overflow-y: auto;
+.dropdown-item {
+  color: #343a40;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #e2e6ea;
+    color: #000;
+  }
 }
 
 .dropdown-toggle {
@@ -62,5 +69,10 @@ a {
 }
 
 .offcanvas {
-  background: linear-gradient(180deg, var(--color-blue), var(--color-peach), var(--color-yellow));
+  background: linear-gradient(
+    180deg,
+    var(--color-blue),
+    var(--color-peach),
+    var(--color-yellow)
+  );
 }

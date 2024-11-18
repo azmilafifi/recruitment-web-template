@@ -1,36 +1,31 @@
 .partnership_container {
-  padding: 60px 120px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: space-between;
   height: 100%;
+  padding: 30px;
+
+  @media (min-width: 1400px) {
+    padding: 60px 120px;
+  }
 
   @media (max-width: 1024px) {
-    .partnership_container {
-      padding: 40px 80px;
-      max-height: 180px;
-    }
+    padding: 40px 80px;
   }
 
   @media (max-width: 768px) {
-    .partnership_container {
-      padding: 20px 40px;
-      max-height: 150px;
-    }
+    padding: 20px 40px;
   }
 
   @media (max-width: 480px) {
-    .partnership_container {
-      padding: 15px 20px;
-      max-height: 120px;
-    }
+    padding: 15px 1rem;
   }
 }
 
 .title {
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   color: #d2d2d2;
   margin-bottom: 30px;
@@ -41,27 +36,25 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   justify-items: center;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .icon {
   width: 150px;
   height: auto;
-}
 
-@media (max-width: 1024px) {
-  .partnership_icons {
-    grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    width: 80px;
   }
-  .icon {
-    width: 100px;
-  }
-}
 
-@media (max-width: 768px) {
-  .partnership_icons {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .icon {
-    width: 150px;
+  @media (max-width: 480px) {
+    width: 60%;
   }
 }
