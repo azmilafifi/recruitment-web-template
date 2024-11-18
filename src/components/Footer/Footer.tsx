@@ -3,6 +3,22 @@ import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+
+  const footerSections = [
+    {
+      title: 'Explore',
+      items: ['Homepage', 'For jobseekers', 'For clients', 'Our sectors', 'Resources', 'Contact us'],
+    },
+    {
+      title: 'Sectors',
+      items: ['Software engineering', 'DevOps', 'Cloud', 'Infrastructure', 'Testing', 'Security'],
+    },
+    {
+      title: 'Services',
+      items: ['Nav Item', 'Nav Item', 'Nav Item', 'Nav Item', 'Nav Item'],
+    },
+  ];
+
   return (
     <div className={styles.footer_container}>
       <div className="container">
@@ -16,38 +32,16 @@ const Footer = () => {
               <FaTwitter />
             </div>
           </div>
-          <div className="col-lg-3 col-md-12 col-sm-12 mb-4">
-            <h5>Explore</h5>
-            <ul className={styles.footer_list}>
-              <li>Homepage</li>
-              <li>For jobseekers</li>
-              <li>For clients</li>
-              <li>Our sectors</li>
-              <li>Resources</li>
-              <li>Contact us</li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-12 col-sm-12 mb-4">
-            <h5>Sectors</h5>
-            <ul className={styles.footer_list}>
-              <li>Software engineering</li>
-              <li>DevOps</li>
-              <li>Cloud</li>
-              <li>Infrastructure</li>
-              <li>Testing</li>
-              <li>Security</li>
-            </ul>
-          </div>
-          <div className="col-lg-3 col-md-12 col-sm-12 mb-4">
-            <h5>Services</h5>
-            <ul className={styles.footer_list}>
-              <li>Nav Item</li>
-              <li>Nav Item</li>
-              <li>Nav Item</li>
-              <li>Nav Item</li>
-              <li>Nav Item</li>
-            </ul>
-          </div>
+          {footerSections.map((section, index) => (
+            <div key={index} className="col-lg-3 col-md-12 col-sm-12 mb-4">
+              <h5>{section.title}</h5>
+              <ul className={styles.footer_list}>
+                {section.items.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
