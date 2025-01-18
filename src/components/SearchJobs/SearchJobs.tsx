@@ -10,7 +10,7 @@ const SearchJobs = () => {
             <div className={`${styles.contentWrapper} row col-12 align-items-center`}>
                 <div className="col-md-6 text-white mb-5">
                     <div className={styles.subtitle}>Software Recruitment </div>
-                    <h1 className={styles.title}>Elevate your career</h1>
+                    <h1 className={styles.title}>Elevate your career now</h1>
                     <div className={styles.searchForm}>
                         <input
                             type="text"
